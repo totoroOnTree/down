@@ -1,0 +1,115 @@
+body,ul,li{
+	padding: 0;
+	margin: 0	
+}
+ul,li{
+	list-style: none
+}
+
+.ifly-hide{
+	display: none!important
+}
+.ifly-show{
+	display: block!important
+}
+
+@-webkit-keyframes animat-upbit{
+	from {
+		-webkit-transform:translate3d(0,10px,0);
+		opacity:.3
+	}
+	to {
+		-webkit-transform:translate3d(0,0,0);
+		opacity:1
+	}
+}
+@keyframes animat-upbit{
+	from {
+		transform:translate3d(0,10px,0);
+		opacity:.3
+	}
+	to {
+		transform:translate3d(0,0,0);
+		opacity:1
+	}
+}
+
+.ifly-anim-upbit{
+	-webkit-animation-name:animat-upbit;
+	animation-name:animat-upbit;
+	-webkit-animation-duration: .35s;
+    animation-duration: .35s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.class-grade-cont{
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+}
+.class-grade-cont input{
+	width: 240px;
+	height: 30px;
+	padding: 0 5px;
+	padding-right: 25px;
+	border:1px #d9d9d9 solid;
+	line-height: 30px
+}
+
+.class-grade-cont .class-grade-clear{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 1px;
+	right: 0;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer
+}
+.class-grade-cont .class-grade-wap,
+.class-grade-wap li>ul{
+	display: none;
+	box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+.class-grade-cont .class-grade-wap,
+.class-grade-wap li>ul{
+	border:1px #d9d9d9 solid
+}
+.class-grade-cont .class-grade-wap{
+	position: absolute;
+	top: 34px;
+	left: 0;
+	width: 100%;
+	max-width: 150px;
+	background-color: #fff;
+	color: #666;
+	font-size: 12px
+}
+.class-grade-cont input,
+.class-grade-wap,
+.class-grade-wap li,
+.class-grade-wap li>ul{
+	box-sizing: border-box
+}
+.class-grade-wap li{
+	position: relative;
+	padding:5px 10px;
+	cursor: pointer
+}
+.class-grade-wap li.arrow-right{
+	padding-right: 15px;
+	background:url(../img/arrow-right.png) no-repeat right center;	
+	cursor: default		
+}
+.class-grade-wap li:hover{
+	background-color: #f8f8f8
+}
+.class-grade-wap li>ul{
+	position: absolute;
+	top: -1px;
+	right: -100%;
+	width: 100%;
+	background-color: #fff
+}
